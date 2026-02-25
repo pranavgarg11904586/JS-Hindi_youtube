@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let userName = prompt("kindly enter name",'');
+            if(userName =="Admin"){
+                let pass = prompt("kindly enter password",'');
+                if(pass=="TheMaster"){
+                    alert("welcome!");
+                }else if(pass === null || pass ===''){
+                    alert("Canceled");
+                }else{
+                    alert("Wrong Password");
+                }
+            }else if(userName ==="null" || userName === ''){
+                    alert("Canceled");
+            }else{
+                alert("I don't know you");
+            }
+        </script>
+    </body>
+</html>
