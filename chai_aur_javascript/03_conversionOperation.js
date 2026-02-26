@@ -17,3 +17,10 @@
 // let booleanIsLoggedIn = Boolean(isLoggedIn);
 
 // console.log(booleanIsLoggedIn);
+
+// number to string conversion
+
+// let score = 100;
+// let scoreInString = String(score);
+// console.log(typeof scoreInString);
+// console.log(scoreInString);
