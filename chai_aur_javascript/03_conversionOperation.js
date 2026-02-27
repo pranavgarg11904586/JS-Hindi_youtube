@@ -24,3 +24,4 @@
 // let scoreInString = String(score);
 // console.log(typeof scoreInString);
 // console.log(scoreInString);
+
