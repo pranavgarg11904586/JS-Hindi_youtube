@@ -1,9 +1,8 @@
-// 
+const user = {
+    name: "John",
+    surname: "Smith",
+};
 
-// let user ={
-//     name : "john",
-//     surname:"smith"
-// };
-// user.name = "pete";
-// console.log(user.name);
+user.name = "Pete";
+console.log(user.name);
 
