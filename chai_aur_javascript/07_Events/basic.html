@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Basic</title>
+</head>
+<body>
+    <input type="button" value="ClickHere" id ="elem">
+    <script>
+        elem.onclick= function(){
+            console.log("click");
+            alert("click");
+        }
+    </script>
+
+    <button id ="elem">click me</button>
+    <script>
+        function sayThanks(){
+            alert("it's a function")
+        }
+        elem.onclick=function(){
+            sayThanks();
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div id="parent">
+    Parent
+    
+      <button id="btn">Click Me</button>
+  </div>
+
+  <script>
+    const btn    = document.getElementById('btn');
+    const parent = document.getElementById('parent');
+
+    // Three handlers on the SAME button
+    btn.addEventListener('click', function() {
+      console.log('Button — Handler 1');
+    });
+
+    btn.addEventListener('click', function(event) {
+      console.log('Button — Handler 2');
+        event.stopPropagation();
+    });
+
+    btn.addEventListener('click', function() {
+      console.log('Button — Handler 3');
+    });
+
+    // Handler on the parent (bubbled up)
+    parent.addEventListener('click', function() {
+      console.log('Parent — Handler ← bubbled up');
+    });
+  </script>
+
+</body>
+</html>
